@@ -1131,6 +1131,7 @@ body {
     }
     .events-grid__cover { 
         height: 43vw;
+
     }
     .events-grid-text {
         position: absolute;
@@ -1474,13 +1475,15 @@ body {
     }
     .events-grid__cover { 
         height: 100%; 
+        position: relative;
+
     }
     .events-grid-text {
         position: absolute;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        bottom: -0.9px;
+        /* bottom: -0.9px; */
         align-items: end;
     }
     .events-image {
