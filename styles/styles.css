@@ -455,8 +455,11 @@ body {
  .active > .icon-desctop {
     margin-bottom: 27px;
  }
- .active > .grid-item__title {
-
+.grid-item__power {
+    margin-top: 141px;
+}
+ #active > .grid-item__data {
+    opacity: 1;
  }
  .activ {
     margin-bottom: 44px;
@@ -543,6 +546,16 @@ body {
     top: -21px;
     z-index: -1;
 }
+.form__input:focus {
+    outline: 1px solid #FBF138;
+}
+input[data-rule].valid {
+    border: 1px solid #FBF138;
+}
+input[data-rule].invalid {
+    border: 1px solid #AE0303;
+}
+
 .form__button {
     border: none;
     font: inherit;
@@ -1163,6 +1176,11 @@ body {
          display: none;
      }
 }
+@media(max-width:926px) {
+    .grid-item__power {
+        margin-top: 130px;
+    }
+}
 @media(max-width:900px) {
     .header {
         gap: 6vw;
@@ -1221,6 +1239,9 @@ body {
         grid-column: 2 / 4;
         grid-row: 3 / 4;
      }
+     .grid-item__power {
+        margin-top: 45px;
+    }
      .footer-box {
         gap: 39px;
     }
@@ -1538,6 +1559,9 @@ body {
         line-height: 120%;
         margin: 0;
      }
+     .grid-item__power {
+        margin-top: 10px;
+    }
      .hover {
         display: grid;
         grid-template-columns: repeat(3, 46px 250px 250px);
@@ -1718,7 +1742,7 @@ body {
     }
     .hover {
         grid-template-columns: repeat(2, 10% 82%);
-        -webkit-column-gap: 23px;
+        column-gap: 23px;
     }
     .about__description {
         margin-top: 109px;
