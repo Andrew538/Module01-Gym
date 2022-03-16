@@ -59,49 +59,52 @@
         <section class="events">
             <div class="wrapper">
                 <h2 class="section-title">Ближайшие события</h2>
-                <div class="events-grid">
-                    <div class="events-grid__item">
-                        <div class="gradient"></div>
-                        <div class="events-grid__cover">
-                                <img src="./images/maraphon_mobile.jpg" alt="" class="maraphon__mobile">
-                                <img class="maraphon__tablet" src="./images/maraphon_tablet.jpg" alt="">
-                                <img class="maraphon__desctop" src="./images/maraphon.png" alt="Марафон выносливости">
-                            <div class="events-grid-text">
-                                <div class="events-image"></div>
-                                <p class="events-text">марафон</p>
-                            </div>
+                <div class="events-grid">                     
+                        <div class="events-grid__item "> 
+                            <div class="events-grid__cover marathon">
+                                <div class="gradient">
+                                    <div class="events-grid__table">
+                                        <span class="events__time">29.06 - 4.07</span>    
+                                        <h3 class="events__title">Марафон <br> выносливости</h3>
+                                    </div>
+                                    <div class="events-grid-text">
+                                        <div class="events-image"></div>
+                                        <p class="events-text">марафон</p>
+                                    </div> 
+                                </div>                                 
+                                <button type="button" class="open-modal">Учавствовать</button>   
+                            </div>       
                         </div>
-                        <span class="events__time">29.06 - 4.07</span>    
-                        <h3 class="events__title">Марафон <br> выносливости</h3>
-                        <button type="button" class="open-modal">Учавствовать</button>                   
-                    </div>
                     <div id="coach" class="events-grid__item ">
-                        <div class="gradient"></div>
-                        <div class="events-grid__cover">
-                                <img class="coach__tablet" src="./images/coach_tablet.jpg" alt="">
-                                <img class="coach__desctop" src="./images/coach.jpg" alt="Марафон выносливости">
+                        <div class="events-grid__cover coahc">
+                            <div class="gradient">
+                            <div class="events-grid__table">
+                                <span class="events__time">9.07</span>    
+                                <h3 class="events__title">Как стать <br> тренером?</h3>
+                            </div>
                             <div class="events-grid-text">
                                 <div class="events-image"></div>
                                 <p class="events-text">вебинар</p>
                             </div>
                         </div>               
-                        <span class="events__time">9.07</span>    
-                        <h3 class="events__title">Как стать <br> тренером?</h3>
+                    </div>
                         <button type="button" class="open-modal">Учавствовать</button>                   
                     </div>
                     <div class="events-grid__item mobile">
-                        <div class="gradient"></div>
-                                <div class="events-grid__cover">
-                                <img class="yoga__mobile" src="./images/yoga_mobile.jpg" alt="">
-                                <img class="yoga__tablet" src="./images/yoga_tablet.jpg" alt="">
-                                <img class="yoga__desctop" src="./images/yoga.jpg" alt="Марафон выносливости">
+                        <div class="events-grid__cover yoga">
+
+                        <div class="gradient">
+                        <div class="events-grid__table">
+                            <span class="events__time">15.07</span>    
+                            <h3 class="events__title">Йога, как стиль <br> жизни</h3>
+                        </div>
                             <div class="events-grid-text">
                                 <div class="events-image"></div>
                                 <p class="events-text">вебинар</p>
                             </div>
                         </div>
-                        <span class="events__time">15.07</span>    
-                        <h3 class="events__title">Йога, как стиль <br> жизни</h3>
+                        </div>
+                       
                         <button type="button" class="open-modal">Учавствовать</button>
                     </div>
                 </div>
@@ -123,7 +126,7 @@
                                 <img class="icon-desctop" src="./images/icon/body.svg" alt="">
                                 <h3 class="grid-item__title level">Функциональный тренинг</h3>
                                 <p class="grid-item__text show">тренировки тела для выполнения повседневных действий</p>                             
-                            </div>                       
+                            </div>                               
                     </div>
                     <div id="sculp" class="grid-item">
                         <span class="grid-item__data">24 июня, 10:00</span>
@@ -183,16 +186,20 @@
                     <div class="mail-box">                     
                             <h2 class="mail-box__title" >Подпишитесь на рассылку</h2>                      
                         <div class="form">  
-                            <div class="form__body">
+                            <form action="#" class="form__body">
                                 <div class="agreement">
-                                   <input id="formEmail" type="text" name="email" class="form__input" placeholder="Ваш e-mail"><br>
+                                   <input id="formEmail" type="text" name="email" class="form__input" placeholder="Ваш e-mail" required>
+                                    <button class="form__button button-desctop"><span>ПОДПИСАТЬСЯ</span></button>
+                                </div>
+                                <div class="check">
                                     <input type="checkbox" id="01" class="checkbox">
                                     <label class="form__label" for="01">Согласен с обработкой<a        class="form__link activ"
                                     href="https://annblok.ru/workshop" target="_blank"><u>персональных данных</u>
                                     </a></label>
-                                 </div>
-                            </div>                          
-                             <button class="form__button"><span>ПОДПИСАТЬСЯ</span></button>
+                                </div> 
+                                <button class="form__button button-mobile"><span>ПОДПИСАТЬСЯ</span></button>
+                            </form>                          
+                             <!-- <button class="form__button"><span>ПОДПИСАТЬСЯ</span></button> -->
                         </div>
                     </div>
                 </div>
@@ -254,11 +261,13 @@
                             <li><a href="#">Расписание</a></li>
                             <li><a href="#">О компании</a></li> 
                         </ul>
-                        <a href="#" class="footer-link-info">info@freefit.com</a>
+                        <a href="mailto:andrew742183@mail.ru" class="footer-link-info">info@freefit.com</a>
                         <div class="footer-social site-social">
                         <a href="#" class="footer-link-info info-mobile">info@freefit.com</a>
+                        <div class="footer-social-mobile">
                             <a href="#" class="footer-social__inst"></a>
                             <a href="#" class="footer-social__fb"></a>
+                        </div>                          
                         </div>
                     </div>
                     <div class="footer-info">
