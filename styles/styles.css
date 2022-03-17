@@ -1412,6 +1412,12 @@ input[data-rule].invalid {
     .advantage__item-text {
         margin-top: 10px;
     }
+    .active > .icon-desctop {
+        margin-bottom: 0;
+    }
+    .active > .grid-item__title {
+        margin-bottom: 0;
+    }
     .about__button {
         display: none;
     }
