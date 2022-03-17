@@ -1418,6 +1418,9 @@ input[data-rule].invalid {
     .active > .grid-item__title {
         margin-bottom: 0;
     }
+    .activ {
+        font-size: 12px;
+    }
     .about__button {
         display: none;
     }
